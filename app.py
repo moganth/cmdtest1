@@ -4,7 +4,7 @@ from scripts.services.image_service import image_router as image_router
 from scripts.services.cont_service import container_router as cont_router
 from scripts.services.vol_sevice import volume_router as vol_router
 from scripts.services.jwt_service import authentication_router as auth_router
-from scripts.services.git_service import build_image as git_router
+from scripts.services.git_service import github_router as git_router
 
 
 def create_app() -> FastAPI:

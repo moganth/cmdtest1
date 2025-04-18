@@ -4,9 +4,9 @@ from scripts.models.cont_model import *
 from scripts.constants.api_endpoints import Endpoints
 from scripts.logging.logger import logger
 
-git_router = APIRouter()
+github_router = APIRouter()
 
-@git_router.post(Endpoints.GIT_PULL)
+@github_router.post(Endpoints.GIT_PULL)
 def build_image(request: BuildRequest):
     github_url = request.github_url
     image_name = request.image_name
